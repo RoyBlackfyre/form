@@ -4,9 +4,16 @@
     src: url(./assets/Game\ of\ Thrones.ttf);
 }
 
+:root {
+    --grayCOlor : #4A4A4A;
+    --whiteColor : #FFFAFA;
+}
+
+*{
+    box-sizing: border-box;
+}
 html{
     height: 100vh;
-    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -25,7 +32,7 @@ body{
 }
 
 .column-left {
-    width: 36%;
+    flex: 1;
 }
 
 .background-img {
@@ -66,6 +73,49 @@ body{
     aspect-ratio: 1/1;
     margin: 4%;
     
+}
+
+.column-right {
+    flex: 1.7;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+}
+
+
+
+.row-top{
+    flex:4;
+    background-color: var(--grayCOlor);
+    box-sizing: border-box;
+    flex-basis: calc(100%*4/11);
+    padding: 15% 15% 3.75% 1.85%;
+
+    
+}
+
+.row-top p{
+    color:white;
+    font-size: 2em;  
+
+}
+
+.row-middle{
+    flex:3;
+    flex-basis: calc(100%*3/11);
+    background-color: var(--whiteColor);
+
+}
+
+.row-bottom{
+    flex:4;
+    background-color: var(--grayCOlor);
+    flex-basis: calc(100%*4/11)
+
+}
+
+.row {
+    flex-shrink: 0;
 }
 
 
