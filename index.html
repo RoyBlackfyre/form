@@ -31,12 +31,12 @@
                     <div>
                         <div>
                             <label for="first-name">First name</label>
-                            <input type="text" id="first-name" name="first-name" required maxlength="50" >
+                            <input type="text" id="first-name" name="first-name" required maxlength="50" minlength="3" pattern="^[A-Za-z]+$">
                         </div>
 
                         <div>
                             <label for="last-name">Last name</label>
-                            <input type="text" id="last-name" name="last-name" required maxlength="50" >
+                            <input type="text" id="last-name" name="last-name" required maxlength="50" pattern="^[A-Za-z]+$">
                         </div>
                     </div>
 
@@ -55,12 +55,12 @@
                     <div>
                         <div>
                             <label for="pwd">Password</label>
-                            <input type="password" id="password" name="password" required >
+                            <input type="password" id="password" name="password" required pattern=^(?=.*[A-Z])(?=.*[\d])(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$ >
                         </div>
 
                         <div>
                             <label for="c-pwd">Confirm Password</label>
-                            <input type="password" id="c-password" name="c-password" required >
+                            <input type="password" id="c-password" name="c-password" required pattern=^(?=.*[A-Z])(?=.*[\d])(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$ >
                         </div>
                         
                     </div>
@@ -68,7 +68,9 @@
                 
             </div>
 
-            <div class="row row-bottom"></div>
+            <div class="row row-bottom">
+               
+            </div>
 
         </div>
     </div>

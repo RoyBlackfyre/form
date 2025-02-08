@@ -20,7 +20,7 @@ html{
     padding: 0;
     margin: 0;
 }
-
+ 
 body{
     height: 100vh;
     width:100vw;
@@ -118,7 +118,11 @@ body{
     flex-direction: column;
     justify-content: start;
     padding:1em;
+    transition: .5s;
 }
+
+
+
 
 .row-middle form{
 
@@ -152,6 +156,7 @@ form> div > div {
 
 .row-bottom{
     background-color: var(--grayCOlor);
+    z-index: 1;
     flex-basis: calc(100%*3/11)
 
 }
@@ -168,6 +173,24 @@ label {
 input {
     width: 100%;
     height:35%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    outline: none;
+    border-radius: 5px;
+}
+
+input:focus:valid{
+    box-shadow: 0 0 9px 0px green;
+}
+
+input:focus:invalid{
+    box-shadow: 0 0 9px 0px red;
+}
+
+.row-middle:hover{
+    box-shadow: 0px 0px 20px 10px rgba(185, 38, 38, 0.51);
+    transition: 0.5s;
+    z-index: 2;
 }
 
 
