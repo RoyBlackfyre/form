@@ -55,7 +55,7 @@ body{
     align-self: center;
     flex-grow: 1;
     padding-left: 4%;
-    padding-right: 14%;
+    padding-right: 9%;
     display:flex;
     justify-content: center;
     position: relative;
@@ -192,6 +192,49 @@ input:focus:invalid{
     transition: 0.5s;
     z-index: 2;
 }
+
+.row-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: var(--leftPadding);
+    padding-top: 1em;
+}
+
+.row-bottom button{
+    width: 10em;
+    aspect-ratio: 4/1;
+    font-size: var(--labelFontSize);
+    color:var(black);
+    background-color: var(--whiteColor);
+    border-radius: 15px;
+    border: 1px solid black ;
+    transition: .2s;
+}
+
+.row-bottom button:hover{
+    box-shadow: 2px 2px 4px black;
+    transition: .2s;
+}
+
+.row-bottom p{
+    font-size: calc(var(--labelFontSize)/1.2);
+    color:white;
+}
+
+a {
+    text-decoration: none;
+    color:rgb(238, 110, 110);
+    font-weight: bold;
+    text-decoration: underline;
+    transition: .5s;
+}
+
+a:hover {
+    color:rgb(122, 6, 6);
+    transition: .5s;
+}
+
 
 
 
